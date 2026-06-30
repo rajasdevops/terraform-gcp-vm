@@ -1,11 +1,11 @@
 resource "google_compute_instance" "vm" {
   name         = "terraform-vm"
-  machine_type = "e2-medium"
+  machine_type = "e2-micro"
   zone         = var.zone
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-12"
+      image = "Ubuntu/Ubuntu 26.04 LTS Minimal"
     }
   }
 
