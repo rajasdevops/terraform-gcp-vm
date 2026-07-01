@@ -16,10 +16,10 @@ resource "google_compute_instance" "vm" {
 
   metadata_startup_script = <<EOF
 #!/bin/bash
-apt update
-apt install nginx -y
-systemctl enable nginx
-systemctl start nginx
+sudo apt update
+sudo apt install nginx -y
+sudo systemctl enable nginx
+sudo systemctl start nginx
 EOF
 
   tags = ["http-server"]
