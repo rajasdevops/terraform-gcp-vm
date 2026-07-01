@@ -5,7 +5,7 @@ resource "google_compute_instance" "vm" {
 
   boot_disk {
     initialize_params {
-      image = "Ubuntu/Ubuntu 26.04 LTS Minimal"
+      image = "debian-cloud/debian-12"
     }
   }
 
