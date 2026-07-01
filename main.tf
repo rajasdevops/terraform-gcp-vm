@@ -22,5 +22,5 @@ systemctl enable nginx
 systemctl start nginx
 EOF
 
-  tags = ["http-server"]
+  target_tags = ["http-server"]
 }
